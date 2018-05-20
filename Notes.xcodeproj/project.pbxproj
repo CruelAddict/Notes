@@ -16,8 +16,12 @@
 		61599B6120A4E554001AA163 /* TypesOfNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61599B6020A4E554001AA163 /* TypesOfNotesViewController.swift */; };
 		61599B6320A4E601001AA163 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61599B6220A4E601001AA163 /* NotesViewController.swift */; };
 		93102BF247DAA203BB60C8EB /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8C311A3B5ED413EE1D9918 /* Pods_Notes.framework */; };
+		A0333D0D20B1C59C00AE7BB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0333D0C20B1C59C00AE7BB5 /* GoogleService-Info.plist */; };
+		A0333D1220B1C72200AE7BB5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0333D1120B1C72200AE7BB5 /* Note.swift */; };
+		A0333D1520B1C78B00AE7BB5 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0333D1420B1C78B00AE7BB5 /* Block.swift */; };
+		A0333D1720B1F11F00AE7BB5 /* TextStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0333D1620B1F11F00AE7BB5 /* TextStruct.swift */; };
 		A07DC69620B18DC1003E5E92 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A07DC69520B18DC1003E5E92 /* .gitignore */; };
-		A0DF081620B183DB003D5CD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0DF081520B183DB003D5CD3 /* GoogleService-Info.plist */; };
+		A07DC69820B1B724003E5E92 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07DC69720B1B724003E5E92 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +37,12 @@
 		61599B6220A4E601001AA163 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		73FD3D3B44BA43CE55C76181 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		8C8C311A3B5ED413EE1D9918 /* Pods_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0333D0C20B1C59C00AE7BB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A0333D1120B1C72200AE7BB5 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		A0333D1420B1C78B00AE7BB5 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		A0333D1620B1F11F00AE7BB5 /* TextStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStruct.swift; sourceTree = "<group>"; };
 		A07DC69520B18DC1003E5E92 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		A0DF081520B183DB003D5CD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A07DC69720B1B724003E5E92 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E0AE43AD6C067BA33541AFD0 /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,13 +80,14 @@
 		61599B4B20A4CC0E001AA163 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				A0333D0C20B1C59C00AE7BB5 /* GoogleService-Info.plist */,
 				61599B6420A4E66E001AA163 /* Controllers */,
 				61599B4C20A4CC0E001AA163 /* AppDelegate.swift */,
 				61599B5020A4CC0E001AA163 /* Notes.storyboard */,
 				61599B5320A4CC10001AA163 /* Assets.xcassets */,
 				61599B5520A4CC10001AA163 /* LaunchScreen.storyboard */,
 				61599B5820A4CC10001AA163 /* Info.plist */,
-				A0DF081520B183DB003D5CD3 /* GoogleService-Info.plist */,
+				A0333D1020B1C67B00AE7BB5 /* Model */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -100,6 +109,17 @@
 				8C8C311A3B5ED413EE1D9918 /* Pods_Notes.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0333D1020B1C67B00AE7BB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A07DC69720B1B724003E5E92 /* User.swift */,
+				A0333D1120B1C72200AE7BB5 /* Note.swift */,
+				A0333D1420B1C78B00AE7BB5 /* Block.swift */,
+				A0333D1620B1F11F00AE7BB5 /* TextStruct.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B3A75D09C22963A3AFD215B7 /* Pods */ = {
@@ -173,7 +193,7 @@
 			files = (
 				A07DC69620B18DC1003E5E92 /* .gitignore in Resources */,
 				61599B5720A4CC10001AA163 /* LaunchScreen.storyboard in Resources */,
-				A0DF081620B183DB003D5CD3 /* GoogleService-Info.plist in Resources */,
+				A0333D0D20B1C59C00AE7BB5 /* GoogleService-Info.plist in Resources */,
 				61599B5420A4CC10001AA163 /* Assets.xcassets in Resources */,
 				61599B5220A4CC0E001AA163 /* Notes.storyboard in Resources */,
 			);
@@ -232,9 +252,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				61599B5F20A4E393001AA163 /* ProfileViewController.swift in Sources */,
+				A0333D1520B1C78B00AE7BB5 /* Block.swift in Sources */,
 				61599B6320A4E601001AA163 /* NotesViewController.swift in Sources */,
+				A0333D1220B1C72200AE7BB5 /* Note.swift in Sources */,
+				A07DC69820B1B724003E5E92 /* User.swift in Sources */,
 				61599B4F20A4CC0E001AA163 /* LoginViewController.swift in Sources */,
 				61599B6120A4E554001AA163 /* TypesOfNotesViewController.swift in Sources */,
+				A0333D1720B1F11F00AE7BB5 /* TextStruct.swift in Sources */,
 				61599B4D20A4CC0E001AA163 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
