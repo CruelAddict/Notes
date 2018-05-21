@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EE2D53720B306CC00116F49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EE2D53620B306CC00116F49 /* GoogleService-Info.plist */; };
 		61599B4D20A4CC0E001AA163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61599B4C20A4CC0E001AA163 /* AppDelegate.swift */; };
 		61599B4F20A4CC0E001AA163 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61599B4E20A4CC0E001AA163 /* LoginViewController.swift */; };
 		61599B5220A4CC0E001AA163 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61599B5020A4CC0E001AA163 /* Notes.storyboard */; };
@@ -17,10 +18,10 @@
 		61599B6320A4E601001AA163 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61599B6220A4E601001AA163 /* NotesViewController.swift */; };
 		93102BF247DAA203BB60C8EB /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8C311A3B5ED413EE1D9918 /* Pods_Notes.framework */; };
 		A07DC69620B18DC1003E5E92 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A07DC69520B18DC1003E5E92 /* .gitignore */; };
-		A0DF081620B183DB003D5CD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0DF081520B183DB003D5CD3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EE2D53620B306CC00116F49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		61599B4920A4CC0E001AA163 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61599B4C20A4CC0E001AA163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61599B4E20A4CC0E001AA163 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		73FD3D3B44BA43CE55C76181 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		8C8C311A3B5ED413EE1D9918 /* Pods_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07DC69520B18DC1003E5E92 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		A0DF081520B183DB003D5CD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0AE43AD6C067BA33541AFD0 /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +78,7 @@
 				61599B5320A4CC10001AA163 /* Assets.xcassets */,
 				61599B5520A4CC10001AA163 /* LaunchScreen.storyboard */,
 				61599B5820A4CC10001AA163 /* Info.plist */,
-				A0DF081520B183DB003D5CD3 /* GoogleService-Info.plist */,
+				3EE2D53620B306CC00116F49 /* GoogleService-Info.plist */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			files = (
 				A07DC69620B18DC1003E5E92 /* .gitignore in Resources */,
 				61599B5720A4CC10001AA163 /* LaunchScreen.storyboard in Resources */,
-				A0DF081620B183DB003D5CD3 /* GoogleService-Info.plist in Resources */,
+				3EE2D53720B306CC00116F49 /* GoogleService-Info.plist in Resources */,
 				61599B5420A4CC10001AA163 /* Assets.xcassets in Resources */,
 				61599B5220A4CC0E001AA163 /* Notes.storyboard in Resources */,
 			);
@@ -380,15 +380,17 @@
 			baseConfigurationReference = E0AE43AD6C067BA33541AFD0 /* Pods-Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4566HQP53X;
+				DEVELOPMENT_TEAM = Z3C5SU23V8;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uml-Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "uml-Memorandum";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -399,15 +401,17 @@
 			baseConfigurationReference = 73FD3D3B44BA43CE55C76181 /* Pods-Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4566HQP53X;
+				DEVELOPMENT_TEAM = Z3C5SU23V8;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uml-Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "uml-Memorandum";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
