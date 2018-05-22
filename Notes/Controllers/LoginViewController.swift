@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 
+var appUser : User = User(name: "NO_NAME", id: 0)
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var warningLabel: UILabel!
@@ -66,6 +68,14 @@ class LoginViewController: UIViewController {
         Auth.auth().addStateDidChangeListener { [weak self] (auth, user) in
             if user != nil {
                 self?.performSegue(withIdentifier: "MainMenu", sender: nil)
+                if let userData = UserDefaults.standard.data(forKey: "memUser"),
+                    let appUser = try? JSONDecoder().decode(User.self, from: userData) {
+                }else{
+                    var appUser = User(name: (user?.email)!, id: 1)
+                if let encoded = try? JSONEncoder().encode(appUser) {
+                    UserDefaults.standard.set(encoded, forKey: "kUser")
+                }
+                }
             }
         }
     }

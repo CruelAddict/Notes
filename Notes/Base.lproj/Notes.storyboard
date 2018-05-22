@@ -192,6 +192,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Kkx-eF-N8G" kind="show" id="sfF-La-cuL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -213,6 +216,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zm2-wz-qlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3547.826086956522" y="459.78260869565219"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Zg-kd-pHY">
+            <objects>
+                <viewController id="G9Z-iq-6yV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4vQ-uc-sVF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wX1-Da-hhj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hn-EF-M9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4521" y="215"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MIe-a2-CL3">
+            <objects>
+                <viewController id="Kkx-eF-N8G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BZo-yh-Xrw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8vl-MQ-0vF"/>
+                    </view>
+                    <connections>
+                        <segue destination="TDx-vA-BaI" kind="show" id="Zfn-xV-mLe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vQ-9S-AKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4521" y="896"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="dfY-4K-OdV">
@@ -293,4 +329,8 @@
             <point key="canvasLocation" x="1685.5999999999999" y="460.34482758620692"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sfF-La-cuL"/>
+        <segue reference="Zfn-xV-mLe"/>
+    </inferredMetricsTieBreakers>
 </document>

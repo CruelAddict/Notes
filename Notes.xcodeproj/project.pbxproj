@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EE2D53A20B3E79B00116F49 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2D53820B3E79B00116F49 /* Notes.xcdatamodeld */; };
 		61599B4D20A4CC0E001AA163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61599B4C20A4CC0E001AA163 /* AppDelegate.swift */; };
 		61599B4F20A4CC0E001AA163 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61599B4E20A4CC0E001AA163 /* LoginViewController.swift */; };
 		61599B5220A4CC0E001AA163 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61599B5020A4CC0E001AA163 /* Notes.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EE2D53920B3E79B00116F49 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		61599B4920A4CC0E001AA163 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61599B4C20A4CC0E001AA163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61599B4E20A4CC0E001AA163 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				A07DC69720B1B724003E5E92 /* User.swift */,
 				A0333D1120B1C72200AE7BB5 /* Note.swift */,
+				3EE2D53820B3E79B00116F49 /* Notes.xcdatamodeld */,
 				A0333D1420B1C78B00AE7BB5 /* Block.swift */,
 				A0333D1620B1F11F00AE7BB5 /* TextStruct.swift */,
 			);
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61599B5F20A4E393001AA163 /* ProfileViewController.swift in Sources */,
+				3EE2D53A20B3E79B00116F49 /* Notes.xcdatamodeld in Sources */,
 				A0333D1520B1C78B00AE7BB5 /* Block.swift in Sources */,
 				61599B6320A4E601001AA163 /* NotesViewController.swift in Sources */,
 				A0333D1220B1C72200AE7BB5 /* Note.swift in Sources */,
@@ -405,13 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4566HQP53X;
+				DEVELOPMENT_TEAM = Z3C5SU23V8;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uml-Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "uml-Note";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,13 +428,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4566HQP53X;
+				DEVELOPMENT_TEAM = Z3C5SU23V8;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uml-Notes";
+				PRODUCT_BUNDLE_IDENTIFIER = "uml-Note";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,6 +463,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3EE2D53820B3E79B00116F49 /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3EE2D53920B3E79B00116F49 /* Notes.xcdatamodel */,
+			);
+			currentVersion = 3EE2D53920B3E79B00116F49 /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 61599B4120A4CC0E001AA163 /* Project object */;
 }

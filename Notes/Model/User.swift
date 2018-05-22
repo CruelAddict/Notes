@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User: Hashable{
+class User: Hashable, Codable{
     var hashValue: Int{
         return id
     }
@@ -24,4 +24,6 @@ class User: Hashable{
         self.name = name
         self.id = id
     }
+    
+    
 }

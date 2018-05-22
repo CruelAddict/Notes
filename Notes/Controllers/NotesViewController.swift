@@ -10,8 +10,11 @@ import UIKit
 
 class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var numberOfDisplayedNotes = 0
+    var displayedNotes : [Note]? = []
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return numberOfDisplayedNotes
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,6 +28,10 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTaped))
+        if var displayedNotes = UserDefaults.standard.object(forKey: "Notes") as? [Note]{
+            numberOfDisplayedNotes = displayedNotes.count
+        }
+        
     }
     
     @objc func addTaped() {
@@ -32,7 +39,9 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         alertController.addTextField()
         let save = UIAlertAction(title: "Save", style: .default) { _ in
             guard let textField = alertController.textFields?.first, textField.text != "" else { return }
-            
+            var newNote = Note(creator: appUser, name: textField.text!)
+            self.displayedNotes?.append(newNote)
+            UserDefaults.standard.set(self.displayedNotes, forKey: "memNotes")
         }
         let cancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
         alertController.addAction(save)
